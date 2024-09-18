@@ -10,8 +10,6 @@ export const filterCountriesByRegion = (countries: Country[], region: string) =>
   );
 };
 
-
-
 export const searchCountries = (countries: Country[], query: string) => {
   return countries.filter(country =>
     country.name.common.toLowerCase().includes(query.toLowerCase()) ||
